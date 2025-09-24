@@ -1,0 +1,29 @@
+"""Portal settings tests."""
+
+from plone import api
+
+import pytest
+
+
+class TestPortalSettings:
+    """Test that Portal configuration is correctly done."""
+
+    @pytest.mark.parametrize(
+        "key,expected",
+        [
+            ["plone.site_title", "Intranet do TRE-MT"],
+            ["plone.email_from_name", "Intranet do TRE-MT"],
+            ["plone.smtp_host", "localhost"],
+            ["plone.smtp_port", 25],
+            ["plone.navigation_depth", 4],
+            ["plone.default_language", "pt-br"],
+            ["plone.available_languages", ["pt-br"]],
+            ["plone.portal_timezone", "America/Sao_Paulo"],
+            ["plone.available_timezones", ["America/Sao_Paulo"]],
+            ["plone.twitter_username", "plone"],
+        ],
+    )
+    def test_portal_title(self, portal, key: str, expected: str | int):
+        """Test portal title."""
+        value = api.portal.get_registry_record(key)
+        assert value == expected
