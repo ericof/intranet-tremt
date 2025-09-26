@@ -16,8 +16,10 @@ class TestVocabEstados:
         assert isinstance(self.vocab, SimpleVocabulary)
 
     @pytest.mark.parametrize(
-        "token",
-        ["PR", "SP", "MT"],
+        "token,title",
+        [("PR", "Paraná"), ("SP", "São Paulo"), ("MT", "Mato Grosso")],
     )
-    def test_token(self, token):
-        assert token in list(self.vocab.by_token)
+    def test_terms(self, token: str, title: str):
+        term = self.vocab.getTermByToken(token)
+        assert term is not None
+        assert term.title == title
