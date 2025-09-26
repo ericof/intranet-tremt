@@ -10,6 +10,10 @@
         id="tremt.intranet.area.add"
         title="tremt.intranet: Add Area"
         />
+    <permission
+        id="tremt.intranet.pessoa.add"
+        title="tremt.intranet: Add Pessoa"
+        />
 
   </configure>
 
