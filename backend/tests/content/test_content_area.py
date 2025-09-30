@@ -23,6 +23,17 @@ def area_payload() -> dict:
     }
 
 
+@pytest.fixture
+def area(portal, area_payload) -> Area:
+    """Create an instance of an Area."""
+    with api.env.adopt_roles(["Manager"]):
+        area = api.content.create(
+            container=portal,
+            **area_payload,
+        )
+    return area
+
+
 class TestArea:
     @pytest.fixture(autouse=True)
     def _setup(self, get_fti, portal):
@@ -95,3 +106,30 @@ class TestArea:
             payload["description"] = ""
             area = api.content.create(container=container, **payload)
         assert area.exclude_from_nav is True
+
+    def test_subscriber_modified(self, area):
+        # Importamos os módulos necessários para disparar o evento de modificação
+        from zope.event import notify
+        from zope.lifecycleevent import ObjectModifiedEvent
+
+        # Após criação, com a descrição preenchida, o campo exclude_from_nav
+        # deve estar como False
+        assert area.exclude_from_nav is False
+
+        # Agora vamos alterar a descrição para uma string vazia
+        area.description = ""
+
+        # Disparamos o evento de modificação
+        notify(ObjectModifiedEvent(area))
+
+        # Após a modificação, o campo exclude_from_nav deve ser atualizado para True
+        assert area.exclude_from_nav is True
+
+        # Alteramos a descrição novamente para uma string não vazia
+        area.description = "Nova descrição"
+
+        # Disparamos o evento de modificação
+        notify(ObjectModifiedEvent(area))
+
+        # Após a modificação, o campo exclude_from_nav deve ser atualizado para False
+        assert area.exclude_from_nav is False
