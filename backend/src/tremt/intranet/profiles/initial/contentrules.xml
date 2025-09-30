@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<contentrules>
+  <rule cascading="False"
+        description="Move novas pessoas para a pasta /colaboradores"
+        enabled="True"
+        event="zope.lifecycleevent.interfaces.IObjectAddedEvent"
+        name="rule-1"
+        stop-after="True"
+        title="Organizar pessoas"
+  >
+    <conditions>
+      <condition type="plone.conditions.PortalType">
+        <property name="check_types">
+          <element>Pessoa</element>
+        </property>
+      </condition>
+    </conditions>
+    <actions>
+      <action type="plone.actions.Move">
+        <property name="target_folder">/colaboradores</property>
+      </action>
+    </actions>
+  </rule>
+  <assignment bubbles="True"
+              enabled="True"
+              location=""
+              name="rule-1"
+  />
+</contentrules>

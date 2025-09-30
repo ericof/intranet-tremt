@@ -1,0 +1,108 @@
+{
+  "@id": "/estrutura",
+  "@type": "Document",
+  "UID": "5bca72f7a06b4942a73bc5a087a9a070",
+  "allow_discussion": null,
+  "blocks": {
+    "1ca8de78-5329-467d-ae9d-357fe4f2c7b7": {
+      "@type": "title"
+    },
+    "41acac03-30b6-451d-bffa-6cb457e74685": {
+      "@type": "listing",
+      "headline": "\u00c1reas",
+      "headlineTag": "h2",
+      "querystring": {
+        "b_size": "20",
+        "query": [
+          {
+            "i": "portal_type",
+            "o": "plone.app.querystring.operation.selection.any",
+            "v": [
+              "Area"
+            ]
+          },
+          {
+            "i": "path",
+            "o": "plone.app.querystring.operation.string.relativePath",
+            "v": "./"
+          }
+        ],
+        "sort_on": "getObjPositionInParent",
+        "sort_order": "ascending"
+      },
+      "styles": {},
+      "theme": "default",
+      "variation": "grid"
+    },
+    "51e5283e-2758-4c43-97a8-ea22e257d2cf": {
+      "@type": "description"
+    },
+    "dfca658f-6f18-497b-8c7a-b67aa4ed72c0": {
+      "@type": "slate",
+      "plaintext": "",
+      "styles": {},
+      "theme": "default",
+      "value": [
+        {
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "type": "p"
+        }
+      ]
+    }
+  },
+  "blocks_layout": {
+    "items": [
+      "1ca8de78-5329-467d-ae9d-357fe4f2c7b7",
+      "51e5283e-2758-4c43-97a8-ea22e257d2cf",
+      "41acac03-30b6-451d-bffa-6cb457e74685",
+      "dfca658f-6f18-497b-8c7a-b67aa4ed72c0"
+    ]
+  },
+  "changeNote": "",
+  "contributors": [],
+  "created": "2025-09-30T15:55:04+00:00",
+  "creators": [
+    "admin"
+  ],
+  "description": "Estrutura organizacional",
+  "effective": null,
+  "exclude_from_nav": false,
+  "expires": null,
+  "exportimport.constrains": {},
+  "exportimport.conversation": [],
+  "id": "estrutura",
+  "is_folderish": true,
+  "language": "##DEFAULT##",
+  "layout": "document_view",
+  "lock": {
+    "locked": false,
+    "stealable": true
+  },
+  "modified": "2025-09-30T15:55:04+00:00",
+  "nav_title": null,
+  "preview_caption_link": null,
+  "review_state": "internal",
+  "rights": "",
+  "subjects": [],
+  "title": "Estrutura",
+  "type_title": "Page",
+  "version": "current",
+  "versioning_enabled": true,
+  "workflow_history": {
+    "intranet_folder_workflow": [
+      {
+        "action": null,
+        "actor": "admin",
+        "comments": "",
+        "review_state": "internal",
+        "time": "2025-09-30T15:55:04+00:00"
+      }
+    ]
+  },
+  "working_copy": null,
+  "working_copy_of": null
+}

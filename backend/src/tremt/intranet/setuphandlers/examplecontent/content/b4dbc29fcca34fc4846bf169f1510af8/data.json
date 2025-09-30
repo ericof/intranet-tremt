@@ -1,0 +1,115 @@
+{
+  "@id": "/colaboradores",
+  "@type": "Document",
+  "UID": "b4dbc29fcca34fc4846bf169f1510af8",
+  "allow_discussion": null,
+  "blocks": {
+    "0ab93b4e-e0f1-4a80-ba7b-4ff89f04f97a": {
+      "@type": "description"
+    },
+    "1f46fe61-9fe5-489f-8a34-9a4715f05942": {
+      "@type": "search",
+      "facets": [
+        {
+          "@id": "5c18fa3b-7a04-4a4a-9f7b-c62e7fa13af4",
+          "advanced": false,
+          "field": {
+            "label": "Cargo",
+            "value": "cargo"
+          },
+          "hidden": false,
+          "multiple": false,
+          "title": "Cargo"
+        }
+      ],
+      "facetsTitle": "Filtros",
+      "headline": "Nossos colaboradores",
+      "listingBodyTemplate": "grid",
+      "query": {
+        "b_size": "20",
+        "query": [
+          {
+            "i": "portal_type",
+            "o": "plone.app.querystring.operation.selection.any",
+            "v": [
+              "Pessoa"
+            ]
+          }
+        ],
+        "sort_on": "sortable_title",
+        "sort_order": "ascending"
+      },
+      "showSearchInput": true,
+      "showSortOn": true,
+      "showTotalResults": true,
+      "styles": {},
+      "theme": "default"
+    },
+    "60d3179e-d4be-41a9-9472-c78af1afddca": {
+      "@type": "title"
+    },
+    "94666370-82dd-478a-b502-cc1fa117e839": {
+      "@type": "slate"
+    },
+    "undefined": {
+      "@type": "search",
+      "listingBodyTemplate": "default",
+      "showSearchInput": true,
+      "showSortOn": true,
+      "showTotalResults": true,
+      "styles": {},
+      "theme": "default"
+    }
+  },
+  "blocks_layout": {
+    "items": [
+      "60d3179e-d4be-41a9-9472-c78af1afddca",
+      "0ab93b4e-e0f1-4a80-ba7b-4ff89f04f97a",
+      "1f46fe61-9fe5-489f-8a34-9a4715f05942",
+      "94666370-82dd-478a-b502-cc1fa117e839"
+    ]
+  },
+  "changeNote": "",
+  "contributors": [],
+  "created": "2025-09-30T15:56:53+00:00",
+  "creators": [
+    "admin"
+  ],
+  "description": "Colaboradores do TRE-MT",
+  "effective": null,
+  "exclude_from_nav": false,
+  "expires": null,
+  "exportimport.constrains": {},
+  "exportimport.conversation": [],
+  "id": "colaboradores",
+  "is_folderish": true,
+  "language": "##DEFAULT##",
+  "layout": "document_view",
+  "lock": {
+    "locked": false,
+    "stealable": true
+  },
+  "modified": "2025-09-30T15:56:53+00:00",
+  "nav_title": null,
+  "preview_caption_link": null,
+  "review_state": "internal",
+  "rights": "",
+  "subjects": [],
+  "title": "Colaboradores",
+  "type_title": "Page",
+  "version": "current",
+  "versioning_enabled": true,
+  "workflow_history": {
+    "intranet_folder_workflow": [
+      {
+        "action": null,
+        "actor": "admin",
+        "comments": "",
+        "review_state": "internal",
+        "time": "2025-09-30T15:56:53+00:00"
+      }
+    ]
+  },
+  "working_copy": null,
+  "working_copy_of": null
+}
