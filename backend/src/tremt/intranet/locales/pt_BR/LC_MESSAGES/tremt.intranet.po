@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-09-25 17:32+0000\n"
+"POT-Creation-Date: 2025-10-01 13:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,7 +14,47 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
 
-#: tremt/intranet/content/area.py:14
+#: tremt/intranet/vocabularies/estados.py:9
+msgid "Acre"
+msgstr ""
+
+#: tremt/intranet/vocabularies/estados.py:10
+msgid "Alagoas"
+msgstr ""
+
+#: tremt/intranet/vocabularies/estados.py:11
+msgid "Amapá"
+msgstr ""
+
+#: tremt/intranet/vocabularies/estados.py:12
+msgid "Amazonas"
+msgstr ""
+
+#: tremt/intranet/vocabularies/estados.py:13
+msgid "Bahia"
+msgstr ""
+
+#: tremt/intranet/behaviors/endereco.py:45
+msgid "CEP"
+msgstr ""
+
+#: tremt/intranet/content/pessoa.py:14
+msgid "Cargo"
+msgstr ""
+
+#: tremt/intranet/vocabularies/estados.py:14
+msgid "Ceará"
+msgstr ""
+
+#: tremt/intranet/behaviors/endereco.py:35
+msgid "Cidade"
+msgstr ""
+
+#: tremt/intranet/behaviors/endereco.py:29
+msgid "Complemento"
+msgstr ""
+
+#: tremt/intranet/behaviors/contato.py:16
 msgid "Contato"
 msgstr ""
 
@@ -22,12 +62,40 @@ msgstr ""
 msgid "Create example content to showcase the new website"
 msgstr ""
 
-#: tremt/intranet/content/area.py:21
+#: tremt/intranet/vocabularies/estados.py:15
+msgid "Distrito Federal"
+msgstr ""
+
+#: tremt/intranet/behaviors/contato.py:23
 msgid "Email"
 msgstr ""
 
-#: tremt/intranet/content/area.py:27
+#: tremt/intranet/behaviors/endereco.py:14
+msgid "Endereço"
+msgstr ""
+
+#: tremt/intranet/vocabularies/estados.py:16
+msgid "Espírito Santo"
+msgstr ""
+
+#: tremt/intranet/behaviors/endereco.py:40
+msgid "Estado"
+msgstr ""
+
+#: tremt/intranet/behaviors/endereco.py:30
+msgid "Ex. Anexo, Sala"
+msgstr ""
+
+#: tremt/intranet/vocabularies/estados.py:17
+msgid "Goiás"
+msgstr ""
+
+#: tremt/intranet/behaviors/contato.py:30
 msgid "Informe o telefone de contato"
+msgstr ""
+
+#: tremt/intranet/profiles/default/registry/plone.app.querystring.interfaces.IQueryField.xml
+msgid "Intranet"
 msgstr ""
 
 #: tremt/intranet/profiles.zcml:23
@@ -42,12 +110,100 @@ msgstr "Intranet TRE-MT"
 msgid "Intranet TRE-MT: Uninstall"
 msgstr ""
 
+#: tremt/intranet/vocabularies/estados.py:18
+msgid "Maranhão"
+msgstr ""
+
+#: tremt/intranet/vocabularies/estados.py:19
+msgid "Mato Grosso"
+msgstr ""
+
+#: tremt/intranet/vocabularies/estados.py:20
+msgid "Mato Grosso do Sul"
+msgstr ""
+
+#: tremt/intranet/vocabularies/estados.py:21
+msgid "Minas Gerais"
+msgstr ""
+
 #: tremt/intranet/profiles.zcml:14
 msgid "Package to configure a new Intranet TRE-MT site"
 msgstr "Configurações do portal de Intranet do TRE-MT"
 
-#: tremt/intranet/content/area.py:26
+#: tremt/intranet/vocabularies/estados.py:24
+msgid "Paraná"
+msgstr ""
+
+#: tremt/intranet/vocabularies/estados.py:23
+msgid "Paraíba"
+msgstr ""
+
+#: tremt/intranet/vocabularies/estados.py:22
+msgid "Pará"
+msgstr ""
+
+#: tremt/intranet/vocabularies/estados.py:25
+msgid "Pernambuco"
+msgstr ""
+
+#: tremt/intranet/profiles/default/types/Pessoa.xml
+msgid "Pessoa"
+msgstr ""
+
+#: tremt/intranet/vocabularies/estados.py:26
+msgid "Piauí"
+msgstr ""
+
+#: tremt/intranet/vocabularies/estados.py:28
+msgid "Rio Grande do Norte"
+msgstr ""
+
+#: tremt/intranet/vocabularies/estados.py:29
+msgid "Rio Grande do Sul"
+msgstr ""
+
+#: tremt/intranet/vocabularies/estados.py:27
+msgid "Rio de Janeiro"
+msgstr ""
+
+#: tremt/intranet/vocabularies/estados.py:30
+msgid "Rondônia"
+msgstr ""
+
+#: tremt/intranet/vocabularies/estados.py:31
+msgid "Roraima"
+msgstr ""
+
+#: tremt/intranet/vocabularies/estados.py:32
+msgid "Santa Catarina"
+msgstr ""
+
+#: tremt/intranet/vocabularies/estados.py:34
+msgid "Sergipe"
+msgstr ""
+
+#: tremt/intranet/vocabularies/cargos.py:9
+msgid "Servidor"
+msgstr ""
+
+#: tremt/intranet/vocabularies/estados.py:33
+msgid "São Paulo"
+msgstr ""
+
+#: tremt/intranet/behaviors/contato.py:29
 msgid "Telefone"
+msgstr ""
+
+#: tremt/intranet/vocabularies/cargos.py:10
+msgid "Terceirizado"
+msgstr ""
+
+#: tremt/intranet/vocabularies/estados.py:35
+msgid "Tocantins"
+msgstr ""
+
+#: tremt/intranet/profiles/default/types/Pessoa.xml
+msgid "Uma Pessoa colaboradora do TRE-MT"
 msgstr ""
 
 #: tremt/intranet/profiles/default/types/Area.xml
@@ -56,6 +212,26 @@ msgstr ""
 
 #: tremt/intranet/profiles.zcml:31
 msgid "Uninstall Intranet TRE-MT setup."
+msgstr ""
+
+#. Default: "Filtrar por Área."
+#: tremt/intranet/profiles/default/registry/plone.app.querystring.interfaces.IQueryField.xml
+msgid "description_area"
+msgstr ""
+
+#. Default: "Filtrar por cargo."
+#: tremt/intranet/profiles/default/registry/plone.app.querystring.interfaces.IQueryField.xml
+msgid "description_cargo"
+msgstr ""
+
+#. Default: "Área"
+#: tremt/intranet/profiles/default/registry/plone.app.querystring.interfaces.IQueryField.xml
+msgid "label_area"
+msgstr ""
+
+#. Default: "Cargo"
+#: tremt/intranet/profiles/default/registry/plone.app.querystring.interfaces.IQueryField.xml
+msgid "label_cargo"
 msgstr ""
 
 #: tremt/intranet/profiles/default/types/Area.xml
