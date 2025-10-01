@@ -4,6 +4,10 @@ import { ClimaSchema } from 'volto-tremt-intranet/components/Blocks/Clima/schema
 import ClimaSVG from '@plone/volto/icons/cloud.svg';
 import type { BlockConfigBase } from '@plone/types';
 
+function isBlockAvailable({ properties, block, navRoot, contentType, user }) {
+  return contentType !== 'Plone Site';
+}
+
 const ClimaBlockInfo: BlockConfigBase = {
   id: 'climaBlock',
   title: 'Previsão do tempo',
@@ -12,7 +16,7 @@ const ClimaBlockInfo: BlockConfigBase = {
   view: ClimaBlockView,
   edit: ClimaBlockEdit,
   blockSchema: ClimaSchema,
-  restricted: false,
+  restricted: isBlockAvailable,
   mostUsed: true,
   sidebarTab: 1,
   blockHasOwnFocusManagement: false,

@@ -10,6 +10,18 @@ declare module '@plone/types' {
   }
 }
 
+function initialBlocks(config: ConfigType) {
+  config.blocks.initialBlocks = {
+    ...config.blocks.initialBlocks,
+    Document: [
+      { '@type': 'title', required: true, fixed: true },
+      { '@type': 'description', required: true, fixed: true },
+      { '@type': 'slate' },
+    ],
+  };
+  return config;
+}
+
 function installLocalBlocks(config: ConfigType) {
   config.blocks.blocksConfig.climaBlock = ClimaBlockInfo;
   return config;
@@ -40,6 +52,9 @@ export default function install(config: ConfigType) {
 
   // Adiciona alguns blocos ao gridBlock
   addBlocksToGridBlock(config, ['climaBlock']);
+
+  // Modifica os blocos iniciais
+  initialBlocks(config);
 
   // Registra Componente para exibir uma Área quando a listagem for de Grade
   config.registerComponent({
